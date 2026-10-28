@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-<head><meta charset="UTF-8"><title>Notas</title><link rel="stylesheet" href="estilos.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplicación sencilla para crear y organizar notas personales.">
+  <title>Mis Notas | Organiza tus ideas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
 <body>
-  <h2>Mis notas</h2>
-  <input id="nota" placeholder="Escribe nota">
-  <button id="agregar">OK</button>
-  <ul id="lista"></ul>
-  <a href="#" id="borrar">BORRAR TODO</a>
+  <main class="tarjeta">
+    <header class="encabezado">
+      <p class="sobretitulo">ESPACIO PERSONAL</p>
+      <h1>Mis notas</h1>
+      <p class="ayuda">Guarda tus ideas importantes en un solo lugar.</p>
+    </header>
+    <form id="formulario">
+      <label for="nota">Nueva nota</label>
+      <textarea id="nota" name="nota" rows="3" maxlength="300" placeholder="Escribe una idea o recordatorio..." required></textarea>
+      <p class="contador" id="contador">0 de 300 caracteres</p>
+      <button class="boton-principal" type="submit">Agregar nota</button>
+    </form>
+    <section class="seccion-notas" aria-labelledby="titulo-notas">
+      <div class="titulo-lista"><h2 id="titulo-notas">Tus notas</h2><span id="total" class="contador-notas">0 notas</span></div>
+      <ul id="lista" class="lista-notas" aria-label="Lista de notas"></ul>
+      <p id="vacio" class="vacio">Todavía no tienes notas. Agrega la primera arriba.</p>
+      <button id="limpiar" class="boton-secundario" type="button">Eliminar todas las notas</button>
+    </section>
+    <p id="mensaje" class="mensaje" role="status" aria-live="polite"></p>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
