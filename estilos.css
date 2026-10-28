@@ -1,0 +1,6 @@
+body { font-family: "Times New Roman"; text-align: center; color: #b5b5b5; }
+h2 { font-size: 13px; }
+input { border: none; border-bottom: 1px solid #eee; }
+button { font-size: 9px; padding: 1px 3px; background: #ddd; color: #fff; border: none; }
+a { color: red; font-size: 20px; font-weight: bold; }
+*:focus { outline: none; }
