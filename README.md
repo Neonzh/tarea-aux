@@ -2,7 +2,7 @@
 
 Aplicación sencilla para agregar, listar y eliminar notas. El rediseño aplica heurísticas de Nielsen, leyes de Fitts, Hick y Miller, principios visuales y criterios básicos de accesibilidad.
 
-pagina del diseño modificado:
+pagina del diseño modificado: https://neonzh.github.io/tarea-aux/
 
 ## Archivos
 
